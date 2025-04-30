@@ -78,7 +78,7 @@ export function CourseForm() {
                     Add new course
                 </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px] md:max-w-[500px] xl:max-w-[600px]">
+            <DialogContent className="sm:max-w-[425px] md:max-w-[500px] xl:max-w-[600px] overflow-y-auto">
                 <DialogHeader>
                     <DialogTitle>
                         Create new Course
