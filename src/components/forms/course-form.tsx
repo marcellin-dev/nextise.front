@@ -1,6 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button"
+import { createCourseAction } from "@/actions/course-actions";
+import { Button } from "@/components/ui/button";
 import {
     Dialog,
     DialogContent,
@@ -9,12 +10,11 @@ import {
     DialogHeader,
     DialogTitle,
     DialogTrigger,
-} from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { createCourseAction } from "@/actions/course-actions";
-import { useFormStatus } from "react-dom";
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import { useActionState } from "react";
+import { useFormStatus } from "react-dom";
 
 
 export type CourseFormState = {
@@ -72,13 +72,13 @@ export function CourseForm() {
 
 
     return (
-        <Dialog>
+        <Dialog >
             <DialogTrigger asChild>
                 <Button size={"lg"}>
                     Add new course
                 </Button>
             </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px] md:max-w-[500px] xl:max-w-[600px] overflow-y-auto">
+            <DialogContent className="sm:max-w-[425px] md:max-w-[500px] xl:max-w-[600px] max-h-[100vh] overflow-y-auto">
                 <DialogHeader>
                     <DialogTitle>
                         Create new Course

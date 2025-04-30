@@ -3,7 +3,7 @@ import { listTrainingAction } from "@/actions/trainer-actions";
 import { Button } from "@/components";
 import { AssignRemoveTrainerForm } from "@/components/forms/assign-remove-trainer-form";
 import { CourseForm } from "@/components/forms/course-form";
-import { format } from "date-fns"
+import { format } from "date-fns";
 
 
 export default async function Home() {
@@ -14,7 +14,7 @@ export default async function Home() {
   const trainers = trainerResult?.response?.data ?? []
   return (
     <main className="">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center overflow-y">
         <h1 className="text-4xl font-bold mb-8">Courses</h1>
         <CourseForm />
       </div>
